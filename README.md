@@ -16,7 +16,7 @@ A **React.js & Bootstrap** powered frontend web app that mimics the UI and featu
 ## 🛠 Tech Stack
 - **Frontend:** React.js, Bootstrap  
 - **Styling:** CSS, Bootstrap  
-- **Version Control:** Git, GitHu
+- **Version Control:** Git, GitHub
 🎥 Home Page
 
 🍿 Movie Listings
