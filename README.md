@@ -17,16 +17,13 @@ A **React.js & Bootstrap** powered frontend web app that mimics the UI and featu
 - **Frontend:** React.js, Bootstrap  
 - **Styling:** CSS, Bootstrap  
 - **Version Control:** Git, GitHub
-🎥 Home Page
-
-🍿 Movie Listings
 
 
 
 
 
 
-## Available Scripts
+
 
 In the project directory, you can run:
 
