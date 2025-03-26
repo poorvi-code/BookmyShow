@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import CustomNavbar from "./components/Navbar"; 
+import CarouselComponent from "./components/CarouselComponent";
+
+import MovieTrailer from "./components/MovieTrailer";
+
+import Auth from "./components/Auth"; 
+import DarkMode from "./components/DarkMode"; 
+import Movies from "./components/Movies"; 
+
+
+
+
+import "bootstrap/dist/css/bootstrap.min.css"; 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <CustomNavbar /> 
+      <CarouselComponent />
+      <MovieTrailer videoId="77vRyWNqZjM" />
+      <DarkMode /> 
+      <Movies />
+      
+      <Auth /> 
+      
+      <h1>Welcome to BookMyShow </h1>
+      
     </div>
   );
 }

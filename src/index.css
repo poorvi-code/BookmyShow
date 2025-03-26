@@ -1,13 +1,122 @@
+/* === Global Styles === */
 body {
+  background-color: #121212;  /* Dark background */
+  color: white;  /* Light text */
+  font-family: 'Poppins', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Remove default margin & padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* === Navbar Styling === */
+.navbar {
+  background-color: #1f1f1f;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #e50914; /* Netflix/BookMyShow Red */
+}
+
+/* === Buttons === */
+button {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #b20710;
+}
+
+/* === Movie Listings Page === */
+.movie-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.movie-card {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 250px;
+  margin: 15px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.movie-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.movie-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* === Trailer Section === */
+.trailer-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+iframe {
+  border-radius: 10px;
+  width: 80%;
+  max-width: 800px;
+  height: 450px;
+  border: none;
+}
+
+/* === Dark Mode Toggle === */
+.dark-mode {
+  background-color: white;
+  color: black;
+}
+
+.dark-mode button {
+  background-color: black;
+  color: white;
+}
+
+/* === Responsive Design === */
+@media (max-width: 768px) {
+  .movie-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
 }
